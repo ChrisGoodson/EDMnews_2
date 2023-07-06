@@ -61,7 +61,6 @@ struct Location: Codable {
     let link: String
 }
 
-// Make API requests using URLSession or a networking library like Alamofire
 let apiKey = "23ad8b0a-746a-4ea3-8e6f-3222f51cd372"
 
 

@@ -11,19 +11,11 @@ import AuthenticationServices
 
 struct SignIn: View {
     @EnvironmentObject var signInViewModel: SignInViewModel
-   // @StateObject var signInViewModel: SignInViewModel = .init()
     var body: some View {
         if signInViewModel.isSignedIn {
             SignedInView()
         } else {
             SignInView()
         }
-    }
-}
-
-
-struct SignIn_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
