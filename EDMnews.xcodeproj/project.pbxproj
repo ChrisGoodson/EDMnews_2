@@ -21,9 +21,8 @@
 		8311FCBD2A562F67007792BD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311FCBB2A562F67007792BD /* SignIn.swift */; };
 		8311FCC02A5631CE007792BD /* EDMnewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311FCBF2A5631CE007792BD /* EDMnewsModel.swift */; };
 		8311FCC22A5635E8007792BD /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311FCC12A5635E8007792BD /* EventsViewModel.swift */; };
-		8311FCC42A563684007792BD /* EDMnewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311FCC32A563684007792BD /* EDMnewsViewController.swift */; };
 		8311FCC82A5649AA007792BD /* SignedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311FCC72A5649AA007792BD /* SignedInView.swift */; };
-		8311FCCA2A5649DC007792BD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311FCC92A5649DC007792BD /* SignInView.swift */; };
+		8311FCCE2A565D4B007792BD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311FCCD2A565D4B007792BD /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +38,8 @@
 		8311FCBB2A562F67007792BD /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		8311FCBF2A5631CE007792BD /* EDMnewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMnewsModel.swift; sourceTree = "<group>"; };
 		8311FCC12A5635E8007792BD /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
-		8311FCC32A563684007792BD /* EDMnewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMnewsViewController.swift; sourceTree = "<group>"; };
 		8311FCC72A5649AA007792BD /* SignedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInView.swift; sourceTree = "<group>"; };
-		8311FCC92A5649DC007792BD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8311FCCD2A565D4B007792BD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +111,8 @@
 			children = (
 				8311FCBA2A562F67007792BD /* InputField.swift */,
 				8311FCBB2A562F67007792BD /* SignIn.swift */,
-				8311FCC32A563684007792BD /* EDMnewsViewController.swift */,
 				8311FCC72A5649AA007792BD /* SignedInView.swift */,
-				8311FCC92A5649DC007792BD /* SignInView.swift */,
+				8311FCCD2A565D4B007792BD /* SignInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,11 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8311FCC42A563684007792BD /* EDMnewsViewController.swift in Sources */,
+				8311FCCE2A565D4B007792BD /* SignInView.swift in Sources */,
 				8311FC9F2A562451007792BD /* ContentView.swift in Sources */,
 				8311FC9D2A562451007792BD /* EDMnewsApp.swift in Sources */,
 				8311FCC82A5649AA007792BD /* SignedInView.swift in Sources */,
-				8311FCCA2A5649DC007792BD /* SignInView.swift in Sources */,
 				8311FCBD2A562F67007792BD /* SignIn.swift in Sources */,
 				8311FCC02A5631CE007792BD /* EDMnewsModel.swift in Sources */,
 				8311FCC22A5635E8007792BD /* EventsViewModel.swift in Sources */,
