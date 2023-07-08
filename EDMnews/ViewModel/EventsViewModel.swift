@@ -31,32 +31,32 @@ class EventsViewModel: ObservableObject {
         eventSearchTask.resume()
     }
     
-//    func fetchEventsForLocation(locationID: Int) {
-//            let eventsURLString = "https://edmtrain.com/api/events?locationIds=\(locationID)&client=\(apiKey)"
-//            guard let eventsURL = URL(string: eventsURLString) else {
-//                print("Invalid events URL.")
-//                return
-//            }
-//
-//            let eventsTask = URLSession.shared.dataTask(with: eventsURL) { [weak self] (data, response, error) in
-//                if let data = data {
-//                    let decoder = JSONDecoder()
-//                    do {
-//                        let eventSearchResponse = try decoder.decode(EventSearchResponse.self, from: data)
-//                        DispatchQueue.main.async {
-//                            self?.events = eventSearchResponse.data
-//                        }
-//                    } catch {
-//                        print("Error decoding events response:", error)
-//                    }
-//                } else if let error = error {
-//                    print("Error making events request: \(error)")
-//                }
-//            }
-//
-//            eventsTask.resume()
-//        }
-//    }
+    func fetchEventsForLocation(locationID: Int) {
+            let eventsURLString = "https://edmtrain.com/api/events?locationIds=\(locationID)&client=\(apiKey)"
+            guard let eventsURL = URL(string: eventsURLString) else {
+                print("Invalid events URL.")
+                return
+            }
+
+            let eventsTask = URLSession.shared.dataTask(with: eventsURL) { [weak self] (data, response, error) in
+                if let data = data {
+                    let decoder = JSONDecoder()
+                    do {
+                        let eventSearchResponse = try decoder.decode(EventSearchResponse.self, from: data)
+                        DispatchQueue.main.async {
+                            self?.events = eventSearchResponse.data
+                        }
+                    } catch {
+                        print("Error decoding events response:", error)
+                    }
+                } else if let error = error {
+                    print("Error making events request: \(error)")
+                }
+            }
+
+            eventsTask.resume()
+        }
+    }
 
 
 
